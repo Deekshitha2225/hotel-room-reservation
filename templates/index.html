@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Room Reservation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Hotel Room Reservation System</h1>
+
+<div class="controls">
+    <input type="number" id="roomCount" placeholder="Enter rooms (1–5)" min="1" max="5">
+    <button onclick="bookRooms()">Book</button>
+    <button onclick="resetRooms()">Reset</button>
+    <button onclick="randomRooms()">Random</button>
+</div>
+
+<p id="info"></p>
+
+<div id="hotel">
+    <div id="stairs">
+        <div>🛗 Lift</div>
+        <div>⬆️ Stairs</div>
+    </div>
+    <div class="floors" id="floors"></div>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
+
